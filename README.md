@@ -43,8 +43,9 @@ export default {
 
 ## 配置详情
 属性配置信息：
+
 | 属性 | 类型 | 必填 | 默认值 | 平台 | 说明 |
-| - |:-: | :-:| :-:| -:| :-- |
+| - |:-: | :-:| :-:| -:| :- |
 | <em class="req">*</em>browse_button | string,HtmlElement | 是 | upload | `pc,mobile` | 上传选择的点选按钮，可以是id或者元素本身 |
 | <em class="req">*</em>domain | string | 是 | | `pc,mobile` | 七牛bucket域名，下载资源时用到 |
 | uptoken | string | 否 | | `pc,mobile` | 上传token，字符串，与fetch_upload_token二选一 |
@@ -86,6 +87,7 @@ fetchUploadToken (up, next) {
         } );
 }
 ```
+
 
 事件配置信息：
 
