@@ -62,7 +62,7 @@ export default {
 | max_files | number | 否 | 10 | `pc,mobile` | 最大上传文件数量 |
 | type_reg | object | 否 | {} | `pc,mobile` | 文件类型校验配置，一个{key: value}对象，key表示上传类型，value：1、一个校验方法，参数是后缀名，返回布尔值；2、一个正则表达式。例如：{image: function(ext){return !0}, execl: /(\.xls[x]?)$/} |
 
-:::tip fetch_upload_token方法使用示例
+fetch_upload_token方法使用示例
 ```js
 /**
  * @desc    获取七牛token方法，如成功会执行七牛设置token并开始七牛上传流程
@@ -86,7 +86,6 @@ fetchUploadToken (up, next) {
         } );
 }
 ```
-:::
 
 事件配置信息：
 
